@@ -217,10 +217,18 @@
 }
 
 .meal {
-  box-shadow: 0 2.44rem 4.8rem rgba(0, 0, 0, 0.075);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 11px;
   /* To make card image appear rounded (can also use border radius on meal-img */
   overflow: hidden;
+  transition: all 0.4s;
+}
+
+.meal:hover {
+  /* first argument is horizontal movement, second is vertical movement */
+  /* transform: translate(2rem, 2rem); */
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
 }
 
 .meal-content {
@@ -272,6 +280,11 @@
   gap: 1.6rem;
 }
 
+.reviews {
+  color: #888;
+  font-size: 1.6rem;
+}
+
 .meal-icon {
   height: 2.4rem;
   width: 2.4rem;
@@ -281,4 +294,29 @@
 
 .meal-img {
   width: 100%;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
 }
