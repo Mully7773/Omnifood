@@ -78,6 +78,18 @@ body {
   display: grid;
   row-gap: 9.6rem;
   column-gap: 6.4rem;
+
+  /* margin-bottom: 9.6rem; */
+}
+
+/* This erases the margin-bottom above for the last grid in any container,i.e., if you use two grids in a row the first one will take the margin-bottom 9.6rem, but the second one will not - we can now have multiple grids in the same section */
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+
+/* This makes it unnecessary to have the code above and the margin-bottom in .grid - any grid that is not the last child should have 9.6rem for margin-bottom*/
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
 }
 
 .grid--2-cols {
