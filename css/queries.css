@@ -1,0 +1,27 @@
+/* rem and em do not depend on HTML font-size in media queries. Instead, 1rem = 1em = 16px (rem is root font-size, em is current font-size - sometimes rem has bugs in media-queries, so it is better to use em in media queries instead)*/
+
+/* divide your pixels by 16 to get em value*/
+
+/* ********************** */
+/* BELOW 1344px (Smaller desktops) */
+/* ********************** */
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* - FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/* - Spacing system (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+ */
