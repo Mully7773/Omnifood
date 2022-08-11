@@ -58,6 +58,7 @@ html {
   /* 10px / 16px = 0.625 = 62.5% */
   /* Percentage of user's browser font-size setting  - 62.5% is basically 10px but in percentage form to that it scales with the user's choice if they decide to change the size of the font - now you can start using rem instead of px everywhere*/
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
