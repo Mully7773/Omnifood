@@ -104,11 +104,18 @@
             </div>
           </div>
           <div class="hero-img-box">
-            <img
-              src="/img/hero.png"
-              class="hero-img"
-              alt="woman enjoying food, meals in storage container, and food bowls on a table"
-            />
+            <!-- Sometimes webp img format is not support across all browsers, so use the picture with source tags to provide options for the browser based on img file type -->
+            <picture>
+              <source srcset="/img/hero.webp" type="image/webp" />
+              <source srcset="/img/hero.png" type="image/png" />
+
+              <!-- Use the fallback image file format here, so png not webp -->
+              <img
+                src="/img/hero.png"
+                class="hero-img"
+                alt="woman enjoying food, meals in storage container, and food bowls on a table"
+              />
+            </picture>
           </div>
         </div>
       </section>
