@@ -105,19 +105,25 @@
           </div>
           <div class="hero-img-box">
             <!-- Sometimes webp img format is not support across all browsers, so use the picture with source tags to provide options for the browser based on img file type -->
-            <picture>
-              <!-- webp format doesn't seem to work on git pages... -->
-              <!-- <source srcset="/img/hero.webp" type="image/webp" /> -->
 
-              <source srcset="/img/hero.png" type="image/png" />
+            <img
+              src="/img/hero.png"
+              class="hero-img"
+              alt="woman enjoying food, meals in storage container, and food bowls on a table"
+            />
+            <!-- <picture> -->
+            <!-- webp format doesn't seem to work on git pages... -->
+            <!-- <source srcset="/img/hero.webp" type="image/webp" /> -->
 
-              <!-- Use the fallback image file format here, so png not webp -->
-              <img
+            <!-- <source srcset="/img/hero.png" type="image/png" /> -->
+
+            <!-- Use the fallback image file format here, so png not webp -->
+            <!-- <img
                 src="/img/hero.png"
                 class="hero-img"
                 alt="woman enjoying food, meals in storage container, and food bowls on a table"
               />
-            </picture>
+            </picture> -->
           </div>
         </div>
       </section>
